@@ -1,0 +1,19 @@
+.cotton-img {
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+}
+
+body {
+    background-color: lightcyan;
+}
+
+.cotton-image-back {
+    border-radius: 30%;
+    behavior: initial;
+}
+
+.shri-ganesh-img {
+    border-radius: 40%;
+    margin-bottom: 40px;
+}

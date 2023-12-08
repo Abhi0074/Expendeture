@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
+    <style>
+
+        body{
+            background-color: aqua;
+            font-size: 2rem;
+        }
+        
+        table, th, td {
+            border: 5px solid black;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        h3 {
+            margin-left: 25px;
+            font-size: 1.5rem;
+        }
+        
+        li {
+            font-size: 20px;
+        }
+
+        .total {
+            margin-top: 5px;
+            font-size: 25px;
+            list-style: none;
+            margin-left: -24px;
+            color: darkblue;
+            background-color: pink;
+        }
+
+       .farm {
+        font-weight: 400;
+       }
+        
+        h1{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+        }
+
+        .farm {
+            border: 3px dashed teal;
+            font-size: 10px;
+        }
+
+        ol{
+            border: 10px ;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            margin-top: 100px;
+            border: 2px solid black;
+            background-color: lightcoral;
+            text-align: center;
+        }
+        @media (max-width:1100px) and (min-width: 150px){
+            .container {
+            display: grid;
+            grid-template-columns:300px 300px 300px;
+            grid-template-rows:350px 350px 350px;
+            gap: 50px;
+            line-break: normal;
+            align-content: center;
+        }
+            }
+
+    </style>
+</head>
+
+<body>
+    <h1>Rent Farm</h1>
+    <div class="container">
+        <div class="first farm">
+        <h3>07/11/2023 (Tuesday)</h3>
+        <ol>
+            <li>Aai :- 9+24+25 = 58</li>
+            <li>Chakuli :- 37</li>
+            <li>Kanchan :- 30</li>
+            <li>Divya :- 32</li>
+            <li class="total first">Total = 157</li>
+        </ol>
+        </div>
+
+        <div class="second farm">
+        <h3>08/11/2023 (Wednesday)</h3>
+        <ol>
+            <li>Aai :- 15+27 = 42</li>
+            <li>Chakuli:- 26</li>
+            <li>Kanchan :- 25</li>
+            <li>Divya :- 25</li>
+            <li class="total second">Total = 118</li>
+        </ol>
+    </div>
+
+    <div class="third farm">
+        <h3>17/11/2023 (Friday)</h3>
+        <ol>
+            <li>Aai :- 16</li>
+            <li>Chakuli :- 16</li>
+            <li>Chitra :-17+20 = 37</li>
+            <li>Archana :- 18+9 = 27</li>
+            <li>Vandana :- 14</li>
+            <li>Sangita :- 14</li>
+            <li class="total third">Total = 124</li>
+        </ol>
+    </div>
+
+    <div class="fourth farm">
+        <h3>18/11/2023 (Saturday)</h3>
+        <ol>
+            <li>Aai :- 23+29 = 52</li>
+            <li>Chakuli :- 33+26+30+24 = 113</li>
+            <li>Chitra :- 26+33+30+23 = 112</li>
+            <li>Archana :- 37+10 = 47</li>
+            <li>Vandana :- 29+22 = 51</li>
+            <li>Sangita :- 39+11 = 50</li>
+            <li>Meera.S :- 35+25 = 60</li>
+            <li>Aasha :- 14 = 14</li>
+            <li class="total fourth">Total = 499</li>
+        </ol>
+    </div>
+
+    <div class="fifth farm">
+        <h3>05/12/2023 (Tuesday)</h3>
+        <ol>
+            <li>Aai :- 20+28+35 = 83</li>
+            <li>Vachhala :- 22+30 = 52</li>
+            <li>Meera.S :- 35+23 = 58</li>
+            <li class="total fifth">Total = 193</li>
+        </ol>
+    </div>
+
+    <div class="sixth farm">
+        <h3>06/12/2023 (Wednesday)</h3>
+        <ol>
+            <li>Aai :- 32+26+30 = 88</li>
+             <li>Vachhala :- 25+29 = 54</li>
+            <li>Meera.S :- 30+32 = 62</li>
+            <li>Jyoti :- 30 = 30</li>
+            <li>Pramila :- 25+22 = 47</li>
+            <li class="total sixth">Total = 281</li>
+        </ol>
+    </div>
+
+    <div class="seven farm">
+        <h3>08/12/2023 (Thursday)</h3>
+        <ol>
+            <li>Aai :- 19+34+32 = 85</li>
+            <li>Chakuli :- 30+30+27+27 = 114</li>
+            <li>Chitra :- 32+30+28+29 = 119</li>
+            <li>Vachhala :- 28+30 = 58</li>
+            <li>Meera.S :- 32+31 = 63</li>
+            <li>Aasha :- 29 = 29</li>
+            <li class="total seven">Total = 468</li>
+        </ol>
+    </div>
+    </div>
+
+
+    <h4>TOTAL OF ALL TOTALS</h4>
+    <p id="demo"></p>
+
+    <script class="java">
+        let a = 157;
+        let b = 118;
+        let c = 124;
+        let d = 499;
+        let e = 193;
+        let f = 281;
+        let g = 468;
+        let demo = a + b + c + d + e + f + g;
+        document.getElementById("demo").innerHTML = demo;
+    </script>
+
+</body>
+</html>

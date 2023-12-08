@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Farm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
+    <style>
+
+        body{
+            background-color: lightgreen;
+            font-size: 2rem;
+        }
+        
+        table, th, td {
+            border: 5px solid black;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        h3 {
+            margin-left: 25px;
+            font-size: 1.5rem;
+        }
+        
+        li {
+            font-size: 20px;
+        }
+
+        .total {
+            margin-top: 5px;
+            font-size: 25px;
+            list-style: none;
+            margin-left: -24px;
+            color: darkblue;
+            background-color: pink;
+        }
+
+       .farm {
+        font-weight: 400;
+       }
+        
+        h1{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            width: 100%;
+            margin-left: 35%;
+            font-family: fantasy;
+            font-style: italic;
+            font-stretch: expanded;
+            font-weight: 400;
+        }
+
+        .farm {
+            border: 3px dashed teal;
+            font-size: 10px;
+        }
+
+        ol{
+            border: 10px ;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            margin-top: 100px;
+            border: 2px solid black;
+            background-color: lightcoral;
+            text-align: center;
+        }
+        @media (max-width:1100px) and (min-width: 150px){
+            .container {
+            display: grid;
+            grid-template-columns:300px 300px 300px;
+            grid-template-rows:350px 350px 350px;
+            gap: 50px;
+            line-break: normal;
+            align-content: center;
+        }
+            }
+
+    </style>
+</head>
+
+<body>
+    <h1>Home Farm</h1>
+    <div class="container">
+        <div class="first farm">
+        <h3>06/11/2023 (Monday)</h3>
+        <ol>
+            <li>Aai :- 50 = 50</li>
+            <li>Manish :- 25 = 25</li>
+            <li class="total first">Total = 157</li>
+        </ol>
+        </div>
+
+        <div class="second farm">
+        <h3>22/11/2023 (Wednesday)</h3>
+        <ol>
+            <li>Aai :- 50 + 42 = 92</li>
+            <li>Laxmi :- 52 = 52</li>
+            <li class="total second">Total = 144</li>
+        </ol>
+    </div>
+
+    <div class="third farm">
+        <h3>23/11/2023 (Thursday)</h3>
+        <ol>
+            <li>Aai :- 40 + 39 = 79</li>
+            <li>Nikita :- 38 = 38</li>
+            <li class="total third">Total = 117</li>
+        </ol>
+    </div>
+    </div>
+
+
+    <h4>TOTAL OF ALL TOTALS</h4>
+    <p id="demo"></p>
+
+    <script class="java">
+        let a = 75;
+        let b = 144;
+        let c = 117;
+        let demo = a + b + c;
+        document.getElementById("demo").innerHTML = demo;
+    </script>
+
+</body>
+</html>
